@@ -23,8 +23,29 @@ public class House extends GraphicalObject {
      */
     @Override
     public void draw(DrawTool drawTool) {
+        //HAUS
         drawTool.setCurrentColor(Color.DARK_GRAY);
-        drawTool.drawFilledRectangle(150,300,100,80);
+        drawTool.drawFilledRectangle(150, 300, 200, 240);
+        //TÜR
+        drawTool.setCurrentColor(Color.BLACK);
+        drawTool.drawFilledRectangle(230,479,50,60);
+        //FENSTER
+        drawTool.setCurrentColor(Color.LIGHT_GRAY);
+        drawTool.drawFilledRectangle(285,350,40,40);
+        drawTool.setCurrentColor(Color.LIGHT_GRAY);
+        drawTool.drawFilledRectangle(180,350,40,40);
+        //FENSTERRAHMEN
+        drawTool.setLineWidth(3);
+        drawTool.setCurrentColor(Color.BLACK);
+        drawTool.drawRectangle(285,350,40,40);
+        drawTool.setCurrentColor(Color.BLACK);
+        drawTool.drawRectangle(180,350,40,40);
+        //FENSTERKREUZ
+        drawTool.drawLine(285,370,325,370);
+        drawTool.drawLine(305,350,305,390);
+        drawTool.drawLine(180,370,220,370);
+        drawTool.drawLine(200,350,200,390);
+
     }
 
     /**
